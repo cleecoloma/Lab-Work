@@ -9,6 +9,8 @@
   <body>
     <header id="header">
       <h1>My Pet Koko</h1>
+      <h4>and his bestfriend</h4>
+      <h2 id="bestFriend">Chester</h2>
       <div id="links">
         <a
           class="link"
@@ -62,14 +64,26 @@
       </div>
     </footer>
     <script>
-      let headerColor = prompt("Change header color by inputting the corresponding number. 1 - light blue, 2 - light gray, 3 - light pink")
-      let element = document.getElementById("header")
-      if (headerColor === "1") {
-        element.style.backgroundColor = "lightblue";
-      } else if (headerColor === "2") {
-        element.style.backgroundColor = "lightgray";
-      } else if (headerColor === "3") {
-        element.style.backgroundColor = "lightpink";
+      let visitorsName = prompt("What is your name?");
+      let confirmName = confirm("Is " + visitorsName + " your name?");
+
+      if (confirmName) {
+        let headerColor = prompt(
+          "Change header color by inputting the corresponding number. 1 - light blue, 2 - light gray, 3 - light pink"
+        );
+        document.getElementById("bestFriend").innerHTML = visitorsName;
+        let element = document.getElementById("header");
+        if (headerColor === "1") {
+          element.style.backgroundColor = "lightblue";
+        } else if (headerColor === "2") {
+          element.style.backgroundColor = "lightgray";
+        } else if (headerColor === "3") {
+          element.style.backgroundColor = "lightpink";
+        } else {
+          element.style.backgroundColor = "white";
+        }
+      } else {
+        alert("Please refresh the web page");
       }
     </script>
   </body>
