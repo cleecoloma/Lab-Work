@@ -1,6 +1,12 @@
+main {
+  background-image: url(https://img.freepik.com/premium-vector/funny-shiba-inu-with-some-different-expressions-orange-colour-background-flat-pattern-design_607052-64.jpg?w=2000);
+  background-size: cover;
+}
+
 h1 {
   text-align: center;
   color: orange;
+  text-shadow: 10px 0 20px;
 }
 
 header div {
@@ -10,8 +16,7 @@ header div {
 .link {
   border: 3px solid orange;
   background-color: orange;
-  color: rgb(42, 96%, 35%)
-  ;
+  color: white;
   text-decoration: none;
   border-radius: 5px;
 }
@@ -26,6 +31,7 @@ header div {
 img {
   width: 380px;
   height: 280px;
+  border-radius: 20px;
 }
 
 .pictures {
@@ -58,8 +64,13 @@ img {
   text-align: center;
 }
 
+.caption {
+  color: white;
+  background-color: orange;
+}
+
 .footer-info {
-  background-color: lightgray;
+  background-color: hsla(0, 0%, 83%, 0.45);
   text-align: center;
 }
 
