@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <h1>My Pet Koko</h1>
       <div id="links">
         <a
@@ -61,5 +61,16 @@
         >
       </div>
     </footer>
+    <script>
+      let headerColor = prompt("Change header color by inputting the corresponding number. 1 - light blue, 2 - light gray, 3 - light pink")
+      let element = document.getElementById("header")
+      if (headerColor === "1") {
+        element.style.backgroundColor = "lightblue";
+      } else if (headerColor === "2") {
+        element.style.backgroundColor = "lightgray";
+      } else if (headerColor === "3") {
+        element.style.backgroundColor = "lightpink";
+      }
+    </script>
   </body>
 </html>

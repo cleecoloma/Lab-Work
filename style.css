@@ -9,6 +9,10 @@ h1 {
   text-shadow: 10px 0 20px;
 }
 
+header {
+  height: 88px;
+}
+
 header div {
   text-align: center;
 }
