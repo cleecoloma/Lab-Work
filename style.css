@@ -7,7 +7,7 @@ header div {
   text-align: center;
 }
 
-header div a {
+.link {
   border: 3px solid orange;
   background-color: orange;
   color: white;
@@ -15,7 +15,7 @@ header div a {
   border-radius: 5px;
 }
 
-header div a:hover {
+.link:hover {
   border: 3px solid white;
   background-color: white;
   color: orange;
@@ -54,5 +54,14 @@ img {
   display: flex;
   flex-direction: column;
   padding: 10px 10px 10px;
+  text-align: center;
+}
+
+.footer-info {
+  background-color: lightgray;
+  text-align: center;
+}
+
+.partners-link {
   text-align: center;
 }
