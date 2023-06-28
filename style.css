@@ -10,7 +10,8 @@ header div {
 .link {
   border: 3px solid orange;
   background-color: orange;
-  color: white;
+  color: rgb(42, 96%, 35%)
+  ;
   text-decoration: none;
   border-radius: 5px;
 }
