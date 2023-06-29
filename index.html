@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <script src="app.js"></script>
     <header id="header">
       <h1 id="topHeaderName">My Pet Koko</h1>
       <h4 id="midHeaderName">and his bestfriend</h4>
@@ -64,36 +65,9 @@
       </div>
     </footer>
     <script>
-      let visitorsName = prompt("What is your name?");
-      let confirmName = confirm("Is " + visitorsName + " your name?");
-
-      if (confirmName) {
-        let headerColor = prompt(
-          "Change header color by inputting the corresponding number. \n 1 - light blue, 2 - light gray, 3 - light pink"
-        );
-        document.getElementById("bestfriend").innerHTML = visitorsName;
-        let element = document.getElementById("header");
-        if (headerColor === "1") {
-          element.style.backgroundColor = "lightblue";
-          document.getElementById("topHeaderName").style.color = "white";
-          document.getElementById("midHeaderName").style.color = "white";
-          document.getElementById("bestfriend").style.color = "white";
-        } else if (headerColor === "2") {
-          element.style.backgroundColor = "lightgray";
-          document.getElementById("topHeaderName").style.color = "white";
-          document.getElementById("midHeaderName").style.color = "white";
-          document.getElementById("bestfriend").style.color = "white";
-        } else if (headerColor === "3") {
-          element.style.backgroundColor = "lightpink";
-          document.getElementById("topHeaderName").style.color = "white";
-          document.getElementById("midHeaderName").style.color = "white";
-          document.getElementById("bestfriend").style.color = "white";
-        } else {
-          alert("Please refresh the web page");
-        }
-      } else {
-        alert("Please refresh the web page");
-      }
+      visitor();
+      confirmVisitor();
+      updateHeaderText();
     </script>
   </body>
 </html>
