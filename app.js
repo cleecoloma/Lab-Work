@@ -1,14 +1,18 @@
 let visitorsName = "";
 let confirmName = "";
+let rate1 = null;
+let rate2 = null;
+let rate3 = null;
 
 function visitor() {
   visitorsName = prompt("What is your name?");
 }
 
 function confirmVisitor() {
-  confirmName = confirm(
-    "Is " + visitorsName + " your name? \nPress OK for yes and Cancel for no."
-  );
+  confirmName = prompt("Type ONE to make sure you're not a robot!");
+  while (confirmName !== "ONE") {
+    confirmName = prompt("Type ONE to make sure you're not a robot!");
+  }
 }
 
 function updateHeaderTextColor() {
@@ -40,5 +44,26 @@ function updateHeaderText() {
     }
   } else {
     alert("Please refresh the web page");
+  }
+}
+
+function rateDog1() {
+  rate1 = prompt("Rate Golden Retriever Breed.\nType 1 through 5");
+  return rate1;
+}
+
+function rateDog2() {
+  rate2 = prompt("Rate English Bulldog Breed.\nType 1 through 5");
+  return rate2;
+}
+
+function rateDog3() {
+  rate3 = prompt("Rate Husky Breed.\nType 1 through 5");
+  return rate3;
+}
+
+function rate(number) {
+  for (i = number; i > 0; i--) {
+    document.write("🐶");
   }
 }
