@@ -1,4 +1,4 @@
-main {
+.pictures {
   background-image: url(https://img.freepik.com/premium-vector/funny-shiba-inu-with-some-different-expressions-orange-colour-background-flat-pattern-design_607052-64.jpg?w=2000);
   background-size: cover;
 }
@@ -37,10 +37,16 @@ header div {
   text-decoration: none;
 }
 
-img {
+.kokoImgs {
   width: 380px;
-  height: 380px;
   border-radius: 20px;
+}
+
+.otherBreedImgs {
+  width: 220px;
+  border-radius: 20px;
+  padding: 0 10px 0 10px;
+  margin: 0 10px 10px 10px;
 }
 
 .pictures {
@@ -76,6 +82,18 @@ img {
 .caption {
   color: white;
   background-color: orange;
+}
+
+#rateTitle {
+  text-align: center;
+  color: orange;
+}
+
+.otherBreed {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer-info {
