@@ -8,9 +8,9 @@
   </head>
   <body>
     <header id="header">
-      <h1>My Pet Koko</h1>
-      <h4>and his bestfriend</h4>
-      <h2 id="bestFriend">Chester</h2>
+      <h1 id="topHeaderName">My Pet Koko</h1>
+      <h4 id="midHeaderName">and his bestfriend</h4>
+      <h2 id="bestfriend">Chester</h2>
       <div id="links">
         <a
           class="link"
@@ -69,16 +69,25 @@
 
       if (confirmName) {
         let headerColor = prompt(
-          "Change header color by inputting the corresponding number. 1 - light blue, 2 - light gray, 3 - light pink"
+          "Change header color by inputting the corresponding number. \n 1 - light blue, 2 - light gray, 3 - light pink"
         );
-        document.getElementById("bestFriend").innerHTML = visitorsName;
+        document.getElementById("bestfriend").innerHTML = visitorsName;
         let element = document.getElementById("header");
         if (headerColor === "1") {
           element.style.backgroundColor = "lightblue";
+          document.getElementById("topHeaderName").style.color = "white";
+          document.getElementById("midHeaderName").style.color = "white";
+          document.getElementById("bestfriend").style.color = "white";
         } else if (headerColor === "2") {
           element.style.backgroundColor = "lightgray";
+          document.getElementById("topHeaderName").style.color = "white";
+          document.getElementById("midHeaderName").style.color = "white";
+          document.getElementById("bestfriend").style.color = "white";
         } else if (headerColor === "3") {
           element.style.backgroundColor = "lightpink";
+          document.getElementById("topHeaderName").style.color = "white";
+          document.getElementById("midHeaderName").style.color = "white";
+          document.getElementById("bestfriend").style.color = "white";
         } else {
           alert("Please refresh the web page");
         }
